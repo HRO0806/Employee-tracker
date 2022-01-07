@@ -17,7 +17,9 @@ CREATE TABLE department (
 CREATE TABLE role (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30),
-    salary DECIMAL
+    salary DECIMAL,
+    department_id Integer,
+    CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
 CREATE TABLE employee (
