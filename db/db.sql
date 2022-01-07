@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS manage;
+CREATE DATABASE manage;
+USE manage;
