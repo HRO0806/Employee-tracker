@@ -1,3 +1,10 @@
-const musql = require('mysql2');
+const mysql = require ('mysql2');
+const connection = mysql.createConnection({
 
-module.exports = db;
+    host: 'localhost',
+    user: 'root',
+    password: 'Enter your own password',
+    database: 'manage'
+});
+
+module.exports = connection;
